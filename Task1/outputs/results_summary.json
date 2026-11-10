@@ -1,0 +1,603 @@
+{
+  "data_quality": {
+    "raw_rows": 377719,
+    "raw_columns": [
+      "time",
+      "Cyclone_Inlet_Gas_Temp",
+      "Cyclone_Material_Temp",
+      "Cyclone_Outlet_Gas_draft",
+      "Cyclone_cone_draft",
+      "Cyclone_Gas_Outlet_Temp",
+      "Cyclone_Inlet_Draft"
+    ],
+    "unparseable_timestamps": 0,
+    "duplicate_timestamps": 0,
+    "off_grid_timestamps": 0,
+    "status_strings": {
+      "Cyclone_Inlet_Gas_Temp": {
+        "Not Connect": 723,
+        "I/O Timeout": 470,
+        "Configure": 108,
+        "Scan Timeout": 17,
+        "Comm Fail": 2
+      },
+      "Cyclone_Gas_Outlet_Temp": {
+        "Not Connect": 723,
+        "I/O Timeout": 470,
+        "Configure": 108,
+        "Scan Timeout": 17,
+        "Comm Fail": 2,
+        "Unit Down": 1
+      },
+      "Cyclone_Material_Temp": {
+        "Not Connect": 723,
+        "I/O Timeout": 470,
+        "Unit Down": 271,
+        "Configure": 108,
+        "Scan Timeout": 17,
+        "Comm Fail": 2
+      },
+      "Cyclone_Inlet_Draft": {
+        "Not Connect": 723,
+        "I/O Timeout": 470,
+        "Configure": 108,
+        "Scan Timeout": 17,
+        "Unit Down": 2,
+        "Comm Fail": 2
+      },
+      "Cyclone_cone_draft": {
+        "Not Connect": 723,
+        "I/O Timeout": 470,
+        "Configure": 108,
+        "Scan Timeout": 17,
+        "Comm Fail": 2
+      },
+      "Cyclone_Outlet_Gas_draft": {
+        "Not Connect": 723,
+        "I/O Timeout": 470,
+        "Configure": 108,
+        "Scan Timeout": 17,
+        "Comm Fail": 2,
+        "Unit Down": 1
+      }
+    },
+    "expected_rows_on_5min_grid": 378580,
+    "missing_timestamps_inserted": 861,
+    "timestamp_gaps": [
+      {
+        "start": "2017-12-31 00:05:00",
+        "end": "2017-12-31 23:55:00",
+        "points": 287
+      },
+      {
+        "start": "2018-12-31 00:05:00",
+        "end": "2018-12-31 23:55:00",
+        "points": 287
+      },
+      {
+        "start": "2019-12-31 00:05:00",
+        "end": "2019-12-31 23:55:00",
+        "points": 287
+      }
+    ],
+    "start": "2017-01-01 00:00:00",
+    "end": "2020-08-07 12:15:00",
+    "span_days": 1314.5,
+    "out_of_physical_range_set_nan": {
+      "Cyclone_Inlet_Gas_Temp": 0,
+      "Cyclone_Gas_Outlet_Temp": 28,
+      "Cyclone_Material_Temp": 88,
+      "Cyclone_Inlet_Draft": 0,
+      "Cyclone_cone_draft": 2,
+      "Cyclone_Outlet_Gas_draft": 0
+    },
+    "material_temp_implausible_vs_gas_set_nan": 1493,
+    "flatline_points_set_nan": {
+      "Cyclone_Inlet_Gas_Temp": 1045,
+      "Cyclone_Gas_Outlet_Temp": 3250,
+      "Cyclone_Material_Temp": 28610,
+      "Cyclone_Inlet_Draft": 628,
+      "Cyclone_cone_draft": 628,
+      "Cyclone_Outlet_Gas_draft": 627
+    },
+    "statistical_spikes_flagged_not_removed(hampel_z>10)": {
+      "Cyclone_Inlet_Gas_Temp": 2490,
+      "Cyclone_Gas_Outlet_Temp": 2478,
+      "Cyclone_Material_Temp": 2067,
+      "Cyclone_Inlet_Draft": 1827,
+      "Cyclone_cone_draft": 2024,
+      "Cyclone_Outlet_Gas_draft": 2031
+    },
+    "missing_after_cleaning_before_interp": {
+      "Cyclone_Inlet_Gas_Temp": 3226,
+      "Cyclone_Gas_Outlet_Temp": 5460,
+      "Cyclone_Material_Temp": 32643,
+      "Cyclone_Inlet_Draft": 2811,
+      "Cyclone_cone_draft": 2811,
+      "Cyclone_Outlet_Gas_draft": 2809
+    },
+    "missing_after_interp(<=15min)": {
+      "Cyclone_Inlet_Gas_Temp": 3022,
+      "Cyclone_Gas_Outlet_Temp": 5235,
+      "Cyclone_Material_Temp": 31392,
+      "Cyclone_Inlet_Draft": 2611,
+      "Cyclone_cone_draft": 2611,
+      "Cyclone_Outlet_Gas_draft": 2610
+    },
+    "rows_all_vars_present_after_interp": 344448
+  },
+  "shutdowns": {
+    "rule": "median(drafts) > -60.0 mmWC OR inlet gas temp < 300.0 C; merge gaps < 30 min; min duration 30 min",
+    "n_events": 154,
+    "total_downtime_hours": 6840.1,
+    "total_downtime_days": 285.0,
+    "pct_of_time_down": 21.68,
+    "unknown_state_hours(data gaps)": 179.4,
+    "median_duration_hours": 2.33,
+    "mean_duration_hours": 44.42,
+    "max_duration_hours": 1010.08,
+    "events_by_type": {
+      "short stop (<2 h)": 73,
+      "stop (2-24 h)": 48,
+      "extended (>24 h)": 33
+    },
+    "events_per_year": {
+      "2017": 49,
+      "2018": 56,
+      "2019": 38,
+      "2020": 11
+    },
+    "downtime_hours_per_year": {
+      "2017": 1478.4,
+      "2018": 1386.9,
+      "2019": 2958.2,
+      "2020": 1016.5
+    }
+  },
+  "eda": {
+    "corr_active_inlet_vs_outlet_gas_temp": 0.361,
+    "corr_active_inlet_temp_vs_material_temp": 0.671,
+    "corr_active_inlet_draft_vs_outlet_draft": 0.958,
+    "corr_active_cone_vs_outlet_draft": 0.731,
+    "corr_all_inlet_temp_vs_outlet_draft": -0.903,
+    "active_medians": {
+      "Cyclone_Inlet_Gas_Temp": 890.0,
+      "Cyclone_Gas_Outlet_Temp": 884.2,
+      "Cyclone_Material_Temp": 926.2,
+      "Cyclone_Inlet_Draft": -179.0,
+      "Cyclone_cone_draft": -210.8,
+      "Cyclone_Outlet_Gas_draft": -229.8
+    },
+    "week_slice_start": "2018-07-16"
+  },
+  "clustering": {
+    "features": [
+      "InletGasT_m1h",
+      "OutletGasT_m1h",
+      "MaterialT_m1h",
+      "InletDraft_m1h",
+      "ConeDraft_m1h",
+      "OutletDraft_m1h",
+      "DraftLoss_m1h",
+      "InletGasT_std1h",
+      "OutletDraft_std1h",
+      "ConeDraft_std1h"
+    ],
+    "k_selected": 4,
+    "selection_table": [
+      {
+        "k": 2,
+        "inertia": 2289342.7026,
+        "silhouette(20k sample)": 0.2402,
+        "davies_bouldin(20k sample)": 1.5998,
+        "smallest_cluster_pct": 42.3722
+      },
+      {
+        "k": 3,
+        "inertia": 1888806.3363,
+        "silhouette(20k sample)": 0.2405,
+        "davies_bouldin(20k sample)": 1.3653,
+        "smallest_cluster_pct": 2.6575
+      },
+      {
+        "k": 4,
+        "inertia": 1703511.8311,
+        "silhouette(20k sample)": 0.1832,
+        "davies_bouldin(20k sample)": 1.5539,
+        "smallest_cluster_pct": 2.4575
+      },
+      {
+        "k": 5,
+        "inertia": 1562335.2937,
+        "silhouette(20k sample)": 0.1777,
+        "davies_bouldin(20k sample)": 1.4696,
+        "smallest_cluster_pct": 2.2705
+      },
+      {
+        "k": 6,
+        "inertia": 1450462.6836,
+        "silhouette(20k sample)": 0.1788,
+        "davies_bouldin(20k sample)": 1.3622,
+        "smallest_cluster_pct": 2.2041
+      },
+      {
+        "k": 7,
+        "inertia": 1362167.34,
+        "silhouette(20k sample)": 0.1818,
+        "davies_bouldin(20k sample)": 1.3953,
+        "smallest_cluster_pct": 0.8818
+      },
+      {
+        "k": 8,
+        "inertia": 1289624.3125,
+        "silhouette(20k sample)": 0.1637,
+        "davies_bouldin(20k sample)": 1.4975,
+        "smallest_cluster_pct": 0.8353
+      }
+    ],
+    "states": [
+      {
+        "state_id": 0,
+        "state_name": "High load (hottest, strongest draft)",
+        "pct_of_active_time": 36.12,
+        "n_episodes": 1970.0,
+        "episode_median_min": 100.0,
+        "episode_p90_min": 570.0,
+        "description": "Inlet gas 902\u00b0C, outlet gas 903\u00b0C, material 940\u00b0C; inlet/cone/outlet draft -202/-232/-256 mmWC; cyclone dP 54 mmWC; 1-h inlet-temp std 17.8\u00b0C, 1-h cone-draft std 7.5"
+      },
+      {
+        "state_id": 1,
+        "state_name": "Unstable / disturbed (high variability, weak draft)",
+        "pct_of_active_time": 2.44,
+        "n_episodes": 505.0,
+        "episode_median_min": 65.0,
+        "episode_p90_min": 115.0,
+        "description": "Inlet gas 896\u00b0C, outlet gas 868\u00b0C, material 921\u00b0C; inlet/cone/outlet draft -126/-152/-156 mmWC; cyclone dP 31 mmWC; 1-h inlet-temp std 48.6\u00b0C, 1-h cone-draft std 31.4"
+      },
+      {
+        "state_id": 2,
+        "state_name": "Reduced draft / lower gas flow",
+        "pct_of_active_time": 33.55,
+        "n_episodes": 1074.0,
+        "episode_median_min": 107.5,
+        "episode_p90_min": 1026.0,
+        "description": "Inlet gas 883\u00b0C, outlet gas 880\u00b0C, material 925\u00b0C; inlet/cone/outlet draft -158/-188/-192 mmWC; cyclone dP 36 mmWC; 1-h inlet-temp std 14.2\u00b0C, 1-h cone-draft std 5.9"
+      },
+      {
+        "state_id": 3,
+        "state_name": "Normal operation",
+        "pct_of_active_time": 27.89,
+        "n_episodes": 1992.0,
+        "episode_median_min": 85.0,
+        "episode_p90_min": 480.0,
+        "description": "Inlet gas 883\u00b0C, outlet gas 863\u00b0C, material 910\u00b0C; inlet/cone/outlet draft -183/-218/-236 mmWC; cyclone dP 52 mmWC; 1-h inlet-temp std 12.1\u00b0C, 1-h cone-draft std 6.1"
+      }
+    ]
+  },
+  "anomaly_paths": {
+    "points_iforest_and_z5": 1683,
+    "points_z10_only": 525
+  },
+  "anomalies": {
+    "method": "per-state IsolationForest (top 1 % score) AND state-conditional robust |z| > 5.0; events merged across gaps <= 10 min",
+    "n_flagged_points": 2208,
+    "flagged_pct_of_active": 0.757,
+    "n_events": 746,
+    "event_duration_median_min": 5.0,
+    "events_ge_30min": 86,
+    "primary_variable_counts": {
+      "InletGasT": 277,
+      "GasTempDrop": 227,
+      "InletDraft": 82,
+      "OutletDraft": 73,
+      "ConeDraft": 41,
+      "MaterialT": 20,
+      "DraftLoss": 14,
+      "OutletGasT": 12
+    },
+    "signature_counts": {
+      "inlet-gas-temp": 277,
+      "outlet-gas-temp": 239,
+      "draft": 169,
+      "cone-draft": 41,
+      "material-temp": 20
+    },
+    "outlet_temp_signature_events_by_year": {
+      "2017": 4,
+      "2018": 178,
+      "2019": 57
+    },
+    "outlet_temp_signature_events_mar_jun_2018": 156,
+    "per_state": [
+      {
+        "state_id": 0,
+        "state_name": "High load (hottest, strongest draft)",
+        "flagged_point_rate_pct": 0.498,
+        "n_events": 293,
+        "events_per_1000_active_h": 33.38
+      },
+      {
+        "state_id": 1,
+        "state_name": "Unstable / disturbed (high variability, weak draft)",
+        "flagged_point_rate_pct": 0.549,
+        "n_events": 13,
+        "events_per_1000_active_h": 21.96
+      },
+      {
+        "state_id": 2,
+        "state_name": "Reduced draft / lower gas flow",
+        "flagged_point_rate_pct": 0.702,
+        "n_events": 255,
+        "events_per_1000_active_h": 31.27
+      },
+      {
+        "state_id": 3,
+        "state_name": "Normal operation",
+        "flagged_point_rate_pct": 1.177,
+        "n_events": 185,
+        "events_per_1000_active_h": 27.3
+      }
+    ],
+    "events_by_context": {
+      "steady operation": 526,
+      "post-restart (<=6 h after restart)": 124,
+      "pre-shutdown (<=2 h before stop)": 96
+    },
+    "events_by_detection_path": {
+      "iforest+z": 689,
+      "strong-z only": 57
+    },
+    "pct_events_within_2h_before_shutdown": 12.9,
+    "baseline_pct_active_time_within_2h_before_shutdown": 1.1,
+    "pct_shutdowns_preceded_by_anomaly_within_2h": 57.8
+  },
+  "anomaly_case_studies": [
+    {
+      "case": 1,
+      "event_id": 41,
+      "start": "2017-03-31 04:30:00",
+      "end": "2017-03-31 04:55:00",
+      "duration_minutes": 25,
+      "state_name": "Normal operation",
+      "context": "post-restart (<=6 h after restart)",
+      "top_variables": "MaterialT (-8.3 rz); ConeDraft (+2.1 rz); InletGasT (+1.6 rz)",
+      "rz_vs_state_InletGasT": 1.6,
+      "rz_vs_state_OutletGasT": 1.4,
+      "rz_vs_state_MaterialT": -8.3,
+      "rz_vs_state_InletDraft": 1.1,
+      "rz_vs_state_ConeDraft": 2.1,
+      "rz_vs_state_OutletDraft": 1.1,
+      "rz_vs_state_GasTempDrop": -0.6,
+      "rz_vs_state_DraftLoss": -0.2,
+      "change_vs_prev2h_active_InletGasT": 13.0,
+      "change_vs_prev2h_active_OutletGasT": 4.2,
+      "change_vs_prev2h_active_MaterialT": -253.9,
+      "change_vs_prev2h_active_InletDraft": -2.5,
+      "change_vs_prev2h_active_ConeDraft": 14.5,
+      "change_vs_prev2h_active_OutletDraft": -3.1,
+      "first_movers": "none",
+      "state_before": "Reduced draft / lower gas flow",
+      "state_after": "Normal operation",
+      "shutdown_within_6h": false,
+      "minutes_to_next_shutdown": 7000.0,
+      "auto_hypothesis": "material temperature collapsed while gas temperatures stayed normal -> material-temperature sensor fault or a flush of cold/unprocessed material"
+    },
+    {
+      "case": 2,
+      "event_id": 217,
+      "start": "2018-03-19 05:55:00",
+      "end": "2018-03-19 13:40:00",
+      "duration_minutes": 465,
+      "state_name": "Normal operation",
+      "context": "steady operation",
+      "top_variables": "GasTempDrop (+13.4 rz); OutletGasT (-10.6 rz); InletGasT (+2.3 rz)",
+      "rz_vs_state_InletGasT": 2.3,
+      "rz_vs_state_OutletGasT": -10.6,
+      "rz_vs_state_MaterialT": 1.2,
+      "rz_vs_state_InletDraft": -0.4,
+      "rz_vs_state_ConeDraft": 0.5,
+      "rz_vs_state_OutletDraft": -1.0,
+      "rz_vs_state_GasTempDrop": 13.4,
+      "rz_vs_state_DraftLoss": 1.9,
+      "change_vs_prev2h_active_InletGasT": 14.0,
+      "change_vs_prev2h_active_OutletGasT": -73.2,
+      "change_vs_prev2h_active_MaterialT": -2.3,
+      "change_vs_prev2h_active_InletDraft": -10.2,
+      "change_vs_prev2h_active_ConeDraft": 6.2,
+      "change_vs_prev2h_active_OutletDraft": -16.9,
+      "first_movers": "none",
+      "state_before": "Unstable / disturbed (high variability, weak draft)",
+      "state_after": "Normal operation",
+      "shutdown_within_6h": false,
+      "minutes_to_next_shutdown": 640.0,
+      "auto_hypothesis": "outlet gas temperature far below inlet while inlet and material temperatures stay normal -> physically implausible heat loss; most likely outlet thermocouple fault/fouling or local false-air ingress at the measuring point"
+    },
+    {
+      "case": 3,
+      "event_id": 280,
+      "start": "2018-05-03 21:05:00",
+      "end": "2018-05-03 21:25:00",
+      "duration_minutes": 20,
+      "state_name": "Normal operation",
+      "context": "steady operation",
+      "top_variables": "InletGasT (-38.1 rz); GasTempDrop (-21.3 rz); OutletDraft (-0.4 rz)",
+      "rz_vs_state_InletGasT": -38.1,
+      "rz_vs_state_OutletGasT": 0.3,
+      "rz_vs_state_MaterialT": 0.2,
+      "rz_vs_state_InletDraft": -0.4,
+      "rz_vs_state_ConeDraft": -0.3,
+      "rz_vs_state_OutletDraft": -0.4,
+      "rz_vs_state_GasTempDrop": -21.3,
+      "rz_vs_state_DraftLoss": 0.4,
+      "change_vs_prev2h_active_InletGasT": -672.0,
+      "change_vs_prev2h_active_OutletGasT": -3.2,
+      "change_vs_prev2h_active_MaterialT": -31.3,
+      "change_vs_prev2h_active_InletDraft": -0.3,
+      "change_vs_prev2h_active_ConeDraft": 1.2,
+      "change_vs_prev2h_active_OutletDraft": 0.0,
+      "first_movers": "InletGasT@21:05",
+      "state_before": "High load (hottest, strongest draft)",
+      "state_after": "Normal operation",
+      "shutdown_within_6h": false,
+      "minutes_to_next_shutdown": 5585.0,
+      "auto_hypothesis": "inlet gas cooler than normal -> reduced firing, false-air ingress or the start of a stop"
+    },
+    {
+      "case": 4,
+      "event_id": 635,
+      "start": "2019-04-13 08:30:00",
+      "end": "2019-04-13 09:45:00",
+      "duration_minutes": 75,
+      "state_name": "Normal operation",
+      "context": "steady operation",
+      "top_variables": "ConeDraft (+5.2 rz); GasTempDrop (-1.3 rz); OutletGasT (+1.0 rz)",
+      "rz_vs_state_InletGasT": -0.5,
+      "rz_vs_state_OutletGasT": 1.0,
+      "rz_vs_state_MaterialT": -0.7,
+      "rz_vs_state_InletDraft": -0.4,
+      "rz_vs_state_ConeDraft": 5.2,
+      "rz_vs_state_OutletDraft": -0.7,
+      "rz_vs_state_GasTempDrop": -1.3,
+      "rz_vs_state_DraftLoss": 1.0,
+      "change_vs_prev2h_active_InletGasT": 4.6,
+      "change_vs_prev2h_active_OutletGasT": 10.6,
+      "change_vs_prev2h_active_MaterialT": 11.0,
+      "change_vs_prev2h_active_InletDraft": 2.3,
+      "change_vs_prev2h_active_ConeDraft": 18.0,
+      "change_vs_prev2h_active_OutletDraft": 0.5,
+      "first_movers": "none",
+      "state_before": "Normal operation",
+      "state_after": "Normal operation",
+      "shutdown_within_6h": false,
+      "minutes_to_next_shutdown": 1990.0,
+      "auto_hypothesis": "cone draft moved toward atmospheric while outlet draft held -> possible material build-up / partial cone or dip-tube blockage"
+    },
+    {
+      "case": 5,
+      "event_id": 719,
+      "start": "2019-12-25 02:45:00",
+      "end": "2019-12-25 03:45:00",
+      "duration_minutes": 60,
+      "state_name": "Reduced draft / lower gas flow",
+      "context": "pre-shutdown (<=2 h before stop)",
+      "top_variables": "InletDraft (+6.8 rz); OutletDraft (+6.3 rz); MaterialT (-4.8 rz)",
+      "rz_vs_state_InletGasT": 2.9,
+      "rz_vs_state_OutletGasT": -2.2,
+      "rz_vs_state_MaterialT": -4.8,
+      "rz_vs_state_InletDraft": 6.8,
+      "rz_vs_state_ConeDraft": 3.8,
+      "rz_vs_state_OutletDraft": 6.3,
+      "rz_vs_state_GasTempDrop": 4.8,
+      "rz_vs_state_DraftLoss": -2.0,
+      "change_vs_prev2h_active_InletGasT": -9.3,
+      "change_vs_prev2h_active_OutletGasT": -34.4,
+      "change_vs_prev2h_active_MaterialT": -60.3,
+      "change_vs_prev2h_active_InletDraft": -1.0,
+      "change_vs_prev2h_active_ConeDraft": 1.4,
+      "change_vs_prev2h_active_OutletDraft": 3.2,
+      "first_movers": "none",
+      "state_before": "Unstable / disturbed (high variability, weak draft)",
+      "state_after": "shutdown/unknown",
+      "shutdown_within_6h": true,
+      "minutes_to_next_shutdown": 0.0,
+      "auto_hypothesis": "all drafts weaker than normal for this state -> reduced ID-fan suction / damper closing / lower gas flow - consistent with the onset of the following stop"
+    }
+  ],
+  "cross": {
+    "median_run_between_shutdowns_h": 79.2,
+    "pct_restarts_followed_by_another_stop_within_24h": 30.5,
+    "anomaly_events_within_6h_after_restart_pct": 17.7,
+    "baseline_active_time_within_6h_after_restart_pct": 3.2
+  },
+  "forecasting": {
+    "split": "train 2017-01-01 .. 2020-01-01 minus 1 h purge; test 2020-01-01 .. end (hourly origins)",
+    "n_train_origins": 137787,
+    "n_test_origins": 5193,
+    "overall": {
+      "persistence|all": {
+        "RMSE": 19.303,
+        "MAE": 11.753,
+        "n_origins": 5193
+      },
+      "persistence|steady_operation": {
+        "RMSE": 19.304,
+        "MAE": 13.612,
+        "n_origins": 4153
+      },
+      "persistence|shutdown_or_transition": {
+        "RMSE": 19.299,
+        "MAE": 4.329,
+        "n_origins": 1040
+      },
+      "ridge_ar|all": {
+        "RMSE": 16.606,
+        "MAE": 10.342,
+        "n_origins": 5193
+      },
+      "ridge_ar|steady_operation": {
+        "RMSE": 15.868,
+        "MAE": 11.157,
+        "n_origins": 4153
+      },
+      "ridge_ar|shutdown_or_transition": {
+        "RMSE": 19.273,
+        "MAE": 7.087,
+        "n_origins": 1040
+      },
+      "hist_gbm|all": {
+        "RMSE": 15.001,
+        "MAE": 9.221,
+        "n_origins": 5193
+      },
+      "hist_gbm|steady_operation": {
+        "RMSE": 15.13,
+        "MAE": 10.695,
+        "n_origins": 4153
+      },
+      "hist_gbm|shutdown_or_transition": {
+        "RMSE": 14.475,
+        "MAE": 3.334,
+        "n_origins": 1040
+      }
+    },
+    "h12": {
+      "persistence|all": {
+        "RMSE": 20.991,
+        "MAE": 12.548
+      },
+      "persistence|steady_operation": {
+        "RMSE": 19.436,
+        "MAE": 13.901
+      },
+      "persistence|shutdown_or_transition": {
+        "RMSE": 26.301,
+        "MAE": 7.142
+      },
+      "ridge_ar|all": {
+        "RMSE": 18.415,
+        "MAE": 11.277
+      },
+      "ridge_ar|steady_operation": {
+        "RMSE": 16.089,
+        "MAE": 11.526
+      },
+      "ridge_ar|shutdown_or_transition": {
+        "RMSE": 25.683,
+        "MAE": 10.286
+      },
+      "hist_gbm|all": {
+        "RMSE": 16.161,
+        "MAE": 9.845
+      },
+      "hist_gbm|steady_operation": {
+        "RMSE": 15.14,
+        "MAE": 10.828
+      },
+      "hist_gbm|shutdown_or_transition": {
+        "RMSE": 19.718,
+        "MAE": 5.92
+      }
+    }
+  },
+  "runtime_seconds": 78.8
+}

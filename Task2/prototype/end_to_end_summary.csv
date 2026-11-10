@@ -1,0 +1,11 @@
+,value
+answered (LLM or extractive),1.0
+answered by LLM after NLI filtering,0.765
+fell back to extractive quotes,0.235
+citation rate,1.0
+cites a relevant document,0.941
+LLM-draft sentences entailed by sources (before filtering),0.726
+key phrase in final answer,0.882
+out-of-scope correctly refused,1.0
+sensitive correctly blocked,1.0
+median latency answerable (s),3.57

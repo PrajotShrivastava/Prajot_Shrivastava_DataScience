@@ -1,0 +1,127 @@
+{
+  "raw_rows": 377719,
+  "raw_columns": [
+    "time",
+    "Cyclone_Inlet_Gas_Temp",
+    "Cyclone_Material_Temp",
+    "Cyclone_Outlet_Gas_draft",
+    "Cyclone_cone_draft",
+    "Cyclone_Gas_Outlet_Temp",
+    "Cyclone_Inlet_Draft"
+  ],
+  "unparseable_timestamps": 0,
+  "duplicate_timestamps": 0,
+  "off_grid_timestamps": 0,
+  "status_strings": {
+    "Cyclone_Inlet_Gas_Temp": {
+      "Not Connect": 723,
+      "I/O Timeout": 470,
+      "Configure": 108,
+      "Scan Timeout": 17,
+      "Comm Fail": 2
+    },
+    "Cyclone_Gas_Outlet_Temp": {
+      "Not Connect": 723,
+      "I/O Timeout": 470,
+      "Configure": 108,
+      "Scan Timeout": 17,
+      "Comm Fail": 2,
+      "Unit Down": 1
+    },
+    "Cyclone_Material_Temp": {
+      "Not Connect": 723,
+      "I/O Timeout": 470,
+      "Unit Down": 271,
+      "Configure": 108,
+      "Scan Timeout": 17,
+      "Comm Fail": 2
+    },
+    "Cyclone_Inlet_Draft": {
+      "Not Connect": 723,
+      "I/O Timeout": 470,
+      "Configure": 108,
+      "Scan Timeout": 17,
+      "Unit Down": 2,
+      "Comm Fail": 2
+    },
+    "Cyclone_cone_draft": {
+      "Not Connect": 723,
+      "I/O Timeout": 470,
+      "Configure": 108,
+      "Scan Timeout": 17,
+      "Comm Fail": 2
+    },
+    "Cyclone_Outlet_Gas_draft": {
+      "Not Connect": 723,
+      "I/O Timeout": 470,
+      "Configure": 108,
+      "Scan Timeout": 17,
+      "Comm Fail": 2,
+      "Unit Down": 1
+    }
+  },
+  "expected_rows_on_5min_grid": 378580,
+  "missing_timestamps_inserted": 861,
+  "timestamp_gaps": [
+    {
+      "start": "2017-12-31 00:05:00",
+      "end": "2017-12-31 23:55:00",
+      "points": 287
+    },
+    {
+      "start": "2018-12-31 00:05:00",
+      "end": "2018-12-31 23:55:00",
+      "points": 287
+    },
+    {
+      "start": "2019-12-31 00:05:00",
+      "end": "2019-12-31 23:55:00",
+      "points": 287
+    }
+  ],
+  "start": "2017-01-01 00:00:00",
+  "end": "2020-08-07 12:15:00",
+  "span_days": 1314.5,
+  "out_of_physical_range_set_nan": {
+    "Cyclone_Inlet_Gas_Temp": 0,
+    "Cyclone_Gas_Outlet_Temp": 28,
+    "Cyclone_Material_Temp": 88,
+    "Cyclone_Inlet_Draft": 0,
+    "Cyclone_cone_draft": 2,
+    "Cyclone_Outlet_Gas_draft": 0
+  },
+  "material_temp_implausible_vs_gas_set_nan": 1493,
+  "flatline_points_set_nan": {
+    "Cyclone_Inlet_Gas_Temp": 1045,
+    "Cyclone_Gas_Outlet_Temp": 3250,
+    "Cyclone_Material_Temp": 28610,
+    "Cyclone_Inlet_Draft": 628,
+    "Cyclone_cone_draft": 628,
+    "Cyclone_Outlet_Gas_draft": 627
+  },
+  "statistical_spikes_flagged_not_removed(hampel_z>10)": {
+    "Cyclone_Inlet_Gas_Temp": 2490,
+    "Cyclone_Gas_Outlet_Temp": 2478,
+    "Cyclone_Material_Temp": 2067,
+    "Cyclone_Inlet_Draft": 1827,
+    "Cyclone_cone_draft": 2024,
+    "Cyclone_Outlet_Gas_draft": 2031
+  },
+  "missing_after_cleaning_before_interp": {
+    "Cyclone_Inlet_Gas_Temp": 3226,
+    "Cyclone_Gas_Outlet_Temp": 5460,
+    "Cyclone_Material_Temp": 32643,
+    "Cyclone_Inlet_Draft": 2811,
+    "Cyclone_cone_draft": 2811,
+    "Cyclone_Outlet_Gas_draft": 2809
+  },
+  "missing_after_interp(<=15min)": {
+    "Cyclone_Inlet_Gas_Temp": 3022,
+    "Cyclone_Gas_Outlet_Temp": 5235,
+    "Cyclone_Material_Temp": 31392,
+    "Cyclone_Inlet_Draft": 2611,
+    "Cyclone_cone_draft": 2611,
+    "Cyclone_Outlet_Gas_draft": 2610
+  },
+  "rows_all_vars_present_after_interp": 344448
+}

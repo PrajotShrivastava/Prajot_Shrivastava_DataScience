@@ -1,0 +1,205 @@
+qid,method,k,doc_precision,doc_recall,hit,mrr@10,n_relevant_passages_in_index,top1
+Q01,bm25,1,1.0,1.0,1.0,1.0,2,B_12a.pdf p1
+Q01,bm25,3,1.0,1.0,1.0,1.0,2,B_12a.pdf p1
+Q01,bm25,5,0.8,1.0,1.0,1.0,2,B_12a.pdf p1
+Q01,dense,1,1.0,1.0,0.0,0.5,2,B_12a.pdf p3
+Q01,dense,3,0.6666666666666666,1.0,1.0,0.5,2,B_12a.pdf p3
+Q01,dense,5,0.4,1.0,1.0,0.5,2,B_12a.pdf p3
+Q01,hybrid,1,1.0,1.0,0.0,0.5,2,B_12a.pdf p3
+Q01,hybrid,3,0.6666666666666666,1.0,1.0,0.5,2,B_12a.pdf p3
+Q01,hybrid,5,0.6,1.0,1.0,0.5,2,B_12a.pdf p3
+Q01,hybrid+rerank,1,1.0,1.0,0.0,0.5,2,B_12a.pdf p3
+Q01,hybrid+rerank,3,1.0,1.0,1.0,0.5,2,B_12a.pdf p3
+Q01,hybrid+rerank,5,0.8,1.0,1.0,0.5,2,B_12a.pdf p3
+Q02,bm25,1,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,bm25,3,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,bm25,5,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,dense,1,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,dense,3,0.6666666666666666,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,dense,5,0.6,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,hybrid,1,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,hybrid,3,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,hybrid,5,0.8,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,hybrid+rerank,1,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,hybrid+rerank,3,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q02,hybrid+rerank,5,1.0,1.0,1.0,1.0,7,B_12a.pdf p2
+Q03,bm25,1,1.0,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,bm25,3,0.3333333333333333,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,bm25,5,0.4,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,dense,1,1.0,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,dense,3,0.6666666666666666,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,dense,5,0.6,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,hybrid,1,1.0,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,hybrid,3,0.6666666666666666,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,hybrid,5,0.6,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,hybrid+rerank,1,1.0,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,hybrid+rerank,3,0.6666666666666666,1.0,1.0,1.0,1,B_12a.pdf p1
+Q03,hybrid+rerank,5,0.6,1.0,1.0,1.0,1,B_12a.pdf p1
+Q04,bm25,1,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,bm25,3,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,bm25,5,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,dense,1,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,dense,3,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,dense,5,0.8,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,hybrid,1,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,hybrid,3,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,hybrid,5,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,hybrid+rerank,1,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,hybrid+rerank,3,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q04,hybrid+rerank,5,1.0,1.0,1.0,1.0,2,B_12a.pdf p2
+Q05,bm25,1,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,bm25,3,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,bm25,5,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,dense,1,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,dense,3,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,dense,5,0.6,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,hybrid,1,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,hybrid,3,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,hybrid,5,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,hybrid+rerank,1,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,hybrid+rerank,3,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q05,hybrid+rerank,5,1.0,1.0,1.0,1.0,3,B_12a.pdf p2
+Q06,bm25,1,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,bm25,3,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,bm25,5,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,dense,1,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,dense,3,0.6666666666666666,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,dense,5,0.4,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,hybrid,1,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,hybrid,3,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,hybrid,5,0.8,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,hybrid+rerank,1,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,hybrid+rerank,3,1.0,1.0,1.0,1.0,2,sect7a.pdf p4
+Q06,hybrid+rerank,5,0.8,1.0,1.0,1.0,2,sect7a.pdf p4
+Q07,bm25,1,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,bm25,3,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,bm25,5,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,dense,1,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,dense,3,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,dense,5,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,hybrid,1,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,hybrid,3,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,hybrid,5,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,hybrid+rerank,1,1.0,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,hybrid+rerank,3,0.6666666666666666,1.0,1.0,1.0,6,sect7a.pdf p4
+Q07,hybrid+rerank,5,0.8,1.0,1.0,1.0,6,sect7a.pdf p4
+Q08,bm25,1,1.0,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,bm25,3,0.3333333333333333,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,bm25,5,0.2,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,dense,1,1.0,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,dense,3,0.3333333333333333,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,dense,5,0.2,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,hybrid,1,1.0,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,hybrid,3,0.3333333333333333,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,hybrid,5,0.2,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,hybrid+rerank,1,1.0,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,hybrid+rerank,3,0.3333333333333333,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q08,hybrid+rerank,5,0.2,1.0,1.0,1.0,2,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p4
+Q09,bm25,1,1.0,0.2,1.0,1.0,35,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p12
+Q09,bm25,3,1.0,0.6,1.0,1.0,35,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p12
+Q09,bm25,5,1.0,0.8,1.0,1.0,35,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p12
+Q09,dense,1,1.0,0.2,1.0,1.0,35,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p11
+Q09,dense,3,1.0,0.4,1.0,1.0,35,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p11
+Q09,dense,5,1.0,0.6,1.0,1.0,35,Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf p11
+Q09,hybrid,1,1.0,0.2,1.0,1.0,35,Cyclone_Emission_Control.pdf p13
+Q09,hybrid,3,0.6666666666666666,0.4,1.0,1.0,35,Cyclone_Emission_Control.pdf p13
+Q09,hybrid,5,0.8,0.6,1.0,1.0,35,Cyclone_Emission_Control.pdf p13
+Q09,hybrid+rerank,1,1.0,0.2,0.0,0.5,35,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p11
+Q09,hybrid+rerank,3,1.0,0.6,1.0,0.5,35,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p11
+Q09,hybrid+rerank,5,1.0,0.8,1.0,0.5,35,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p11
+Q10,bm25,1,1.0,1.0,0.0,0.1,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,bm25,3,1.0,1.0,0.0,0.1,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,bm25,5,0.6,1.0,0.0,0.1,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,dense,1,0.0,0.0,0.0,0.0,2,654b45bb8292f586313470.pdf p7
+Q10,dense,3,0.3333333333333333,1.0,0.0,0.0,2,654b45bb8292f586313470.pdf p7
+Q10,dense,5,0.2,1.0,0.0,0.0,2,654b45bb8292f586313470.pdf p7
+Q10,hybrid,1,1.0,1.0,0.0,0.0,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,hybrid,3,0.6666666666666666,1.0,0.0,0.0,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,hybrid,5,0.8,1.0,0.0,0.0,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,hybrid+rerank,1,1.0,1.0,0.0,0.0,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,hybrid+rerank,3,0.6666666666666666,1.0,0.0,0.0,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q10,hybrid+rerank,5,0.6,1.0,0.0,0.0,2,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p8
+Q11,bm25,1,1.0,1.0,0.0,0.5,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p23
+Q11,bm25,3,1.0,1.0,1.0,0.5,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p23
+Q11,bm25,5,1.0,1.0,1.0,0.5,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p23
+Q11,dense,1,1.0,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,dense,3,1.0,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,dense,5,0.6,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,hybrid,1,1.0,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,hybrid,3,1.0,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,hybrid,5,0.8,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,hybrid+rerank,1,1.0,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,hybrid+rerank,3,1.0,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q11,hybrid+rerank,5,0.6,1.0,1.0,1.0,1,Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf p28
+Q12,bm25,1,1.0,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,bm25,3,0.3333333333333333,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,bm25,5,0.2,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,dense,1,1.0,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,dense,3,0.3333333333333333,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,dense,5,0.2,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,hybrid,1,1.0,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,hybrid,3,0.3333333333333333,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,hybrid,5,0.2,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,hybrid+rerank,1,1.0,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,hybrid+rerank,3,0.3333333333333333,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q12,hybrid+rerank,5,0.2,1.0,1.0,1.0,1,43 86_Cyclone Separator_IandO.pdf p1
+Q13,bm25,1,1.0,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,bm25,3,1.0,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,bm25,5,0.8,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,dense,1,1.0,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,dense,3,0.3333333333333333,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,dense,5,0.2,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,hybrid,1,1.0,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,hybrid,3,0.3333333333333333,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,hybrid,5,0.2,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,hybrid+rerank,1,1.0,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,hybrid+rerank,3,0.3333333333333333,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q13,hybrid+rerank,5,0.2,1.0,1.0,1.0,8,172-65231ma.pdf p2
+Q14,bm25,1,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p1
+Q14,bm25,3,0.6666666666666666,1.0,1.0,1.0,3,Cyclone_Manual.pdf p1
+Q14,bm25,5,0.8,1.0,1.0,1.0,3,Cyclone_Manual.pdf p1
+Q14,dense,1,1.0,1.0,0.0,0.1111111111111111,3,Cyclone_Manual.pdf p7
+Q14,dense,3,1.0,1.0,0.0,0.1111111111111111,3,Cyclone_Manual.pdf p7
+Q14,dense,5,1.0,1.0,0.0,0.1111111111111111,3,Cyclone_Manual.pdf p7
+Q14,hybrid,1,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p12
+Q14,hybrid,3,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p12
+Q14,hybrid,5,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p12
+Q14,hybrid+rerank,1,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p1
+Q14,hybrid+rerank,3,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p1
+Q14,hybrid+rerank,5,1.0,1.0,1.0,1.0,3,Cyclone_Manual.pdf p1
+Q15,bm25,1,1.0,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,bm25,3,0.6666666666666666,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,bm25,5,0.4,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,dense,1,0.0,0.0,0.0,0.3333333333333333,4,Cyclone_Emission_Control.pdf p8
+Q15,dense,3,0.6666666666666666,1.0,1.0,0.3333333333333333,4,Cyclone_Emission_Control.pdf p8
+Q15,dense,5,0.6,1.0,1.0,0.3333333333333333,4,Cyclone_Emission_Control.pdf p8
+Q15,hybrid,1,1.0,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,hybrid,3,0.6666666666666666,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,hybrid,5,0.4,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,hybrid+rerank,1,1.0,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,hybrid+rerank,3,0.6666666666666666,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q15,hybrid+rerank,5,0.6,1.0,1.0,1.0,4,654b45bb8292f586313470.pdf p9
+Q16,bm25,1,0.0,0.0,0.0,0.25,2,654b45bb8292f586313470.pdf p11
+Q16,bm25,3,0.0,0.0,0.0,0.25,2,654b45bb8292f586313470.pdf p11
+Q16,bm25,5,0.2,1.0,1.0,0.25,2,654b45bb8292f586313470.pdf p11
+Q16,dense,1,0.0,0.0,0.0,0.5,2,654b45bb8292f586313470.pdf p7
+Q16,dense,3,0.3333333333333333,1.0,1.0,0.5,2,654b45bb8292f586313470.pdf p7
+Q16,dense,5,0.2,1.0,1.0,0.5,2,654b45bb8292f586313470.pdf p7
+Q16,hybrid,1,0.0,0.0,0.0,0.5,2,654b45bb8292f586313470.pdf p11
+Q16,hybrid,3,0.3333333333333333,1.0,1.0,0.5,2,654b45bb8292f586313470.pdf p11
+Q16,hybrid,5,0.2,1.0,1.0,0.5,2,654b45bb8292f586313470.pdf p11
+Q16,hybrid+rerank,1,0.0,0.0,0.0,0.5,2,654b45bb8292f586313470.pdf p11
+Q16,hybrid+rerank,3,0.3333333333333333,1.0,1.0,0.5,2,654b45bb8292f586313470.pdf p11
+Q16,hybrid+rerank,5,0.4,1.0,1.0,0.5,2,654b45bb8292f586313470.pdf p11
+Q17,bm25,1,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,bm25,3,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,bm25,5,0.8,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,dense,1,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,dense,3,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,dense,5,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,hybrid,1,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,hybrid,3,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,hybrid,5,0.8,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,hybrid+rerank,1,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,hybrid+rerank,3,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6
+Q17,hybrid+rerank,5,1.0,1.0,1.0,1.0,6,SOP Cyclone-22022023.pdf p6

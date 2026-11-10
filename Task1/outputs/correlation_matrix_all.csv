@@ -1,0 +1,7 @@
+,Cyclone_Inlet_Gas_Temp,Cyclone_Gas_Outlet_Temp,Cyclone_Material_Temp,Cyclone_Inlet_Draft,Cyclone_cone_draft,Cyclone_Outlet_Gas_draft
+Cyclone_Inlet_Gas_Temp,1.0,0.991,0.969,-0.901,-0.899,-0.903
+Cyclone_Gas_Outlet_Temp,0.991,1.0,0.956,-0.897,-0.892,-0.897
+Cyclone_Material_Temp,0.969,0.956,1.0,-0.856,-0.854,-0.857
+Cyclone_Inlet_Draft,-0.901,-0.897,-0.856,1.0,0.97,0.995
+Cyclone_cone_draft,-0.899,-0.892,-0.854,0.97,1.0,0.969
+Cyclone_Outlet_Gas_draft,-0.903,-0.897,-0.857,0.995,0.969,1.0

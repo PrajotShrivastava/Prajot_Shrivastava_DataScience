@@ -1,0 +1,76 @@
+{
+  "embed_model": "BAAI/bge-small-en-v1.5",
+  "n_docs": 11,
+  "n_chunks": 355,
+  "chunk_words": 180,
+  "overlap_words": 40,
+  "docs": [
+    {
+      "doc": "172-65231ma.pdf",
+      "pages": 10,
+      "pages_without_text": 0,
+      "chunks": 23
+    },
+    {
+      "doc": "43 86_Cyclone Separator_IandO.pdf",
+      "pages": 1,
+      "pages_without_text": 0,
+      "chunks": 2
+    },
+    {
+      "doc": "654b45bb8292f586313470.pdf",
+      "pages": 24,
+      "pages_without_text": 4,
+      "chunks": 38
+    },
+    {
+      "doc": "B_12a.pdf",
+      "pages": 7,
+      "pages_without_text": 0,
+      "chunks": 13
+    },
+    {
+      "doc": "Cyclone_Emission_Control.pdf",
+      "pages": 20,
+      "pages_without_text": 0,
+      "chunks": 34
+    },
+    {
+      "doc": "Cyclone_Manual.pdf",
+      "pages": 16,
+      "pages_without_text": 1,
+      "chunks": 36
+    },
+    {
+      "doc": "D13.pdf",
+      "pages": 25,
+      "pages_without_text": 3,
+      "chunks": 34
+    },
+    {
+      "doc": "Operating-and-maintenance-manual-for-a-typical-cylcone-seperator-.pdf",
+      "pages": 20,
+      "pages_without_text": 4,
+      "chunks": 26
+    },
+    {
+      "doc": "Parker_DustHog_C_Series_Cyclone_Dust_Collector_User_Guide.pdf",
+      "pages": 38,
+      "pages_without_text": 6,
+      "chunks": 77
+    },
+    {
+      "doc": "SOP Cyclone-22022023.pdf",
+      "pages": 25,
+      "pages_without_text": 0,
+      "chunks": 44
+    },
+    {
+      "doc": "sect7a.pdf",
+      "pages": 9,
+      "pages_without_text": 0,
+      "chunks": 28
+    }
+  ],
+  "build_seconds": 11.7
+}

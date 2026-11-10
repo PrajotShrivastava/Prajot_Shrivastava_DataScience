@@ -1,0 +1,19 @@
+[19:54:18] Loading /Users/prajot/Desktop/projects/Exactspace_project/Prajot_Shrivastava_DataScience/Task1/data/data.xlsx ...
+[19:54:32] Shutdowns: 154 events, 6840.1 h (21.68 %)
+[19:54:33] Clustering 292,003 active rows on 10 features
+[19:54:50] Selected k=4
+[19:54:55] Anomalies: 746 events, 0.757 % of active points
+[19:54:56] Forecast: train origins 137,787 (stride 2), test hourly origins 5,193
+[19:55:35] Forecast metrics (all horizons):
+                                     RMSE    MAE  n_origins
+model       subset                                         
+persistence all                     19.30  11.75       5193
+            steady_operation        19.30  13.61       4153
+            shutdown_or_transition  19.30   4.33       1040
+ridge_ar    all                     16.61  10.34       5193
+            steady_operation        15.87  11.16       4153
+            shutdown_or_transition  19.27   7.09       1040
+hist_gbm    all                     15.00   9.22       5193
+            steady_operation        15.13  10.70       4153
+            shutdown_or_transition  14.48   3.33       1040
+[19:55:37] Done in 78.8 s. Outputs in /Users/prajot/Desktop/projects/Exactspace_project/Prajot_Shrivastava_DataScience/Task1

@@ -1,0 +1,10 @@
+# Tested with Python 3.14 on macOS arm64 (CPU only). Versions are the ones actually used.
+torch==2.15.0
+transformers==5.22.2
+sentence-transformers==6.2.0
+faiss-cpu==1.15.1
+rank-bm25==0.2.2
+pypdf==7.0.1
+cryptography==50.0.2   # needed by pypdf for the AES-encrypted (owner-password) PDF in the corpus
+numpy==2.5.4
+pandas==3.1.1
